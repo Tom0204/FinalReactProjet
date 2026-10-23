@@ -1,0 +1,71 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.card:hover,
+.card:focus-within {
+  border-color: var(--color-primary);
+  box-shadow: 0 2px 10px rgb(0 0 0 / 12%);
+}
+
+.card__image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: var(--color-placeholder);
+}
+
+.card__body {
+  padding: 0.8rem 1rem 1rem;
+}
+
+.card__title {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+}
+
+/* Le lien du titre s'étend sur toute la carte */
+.card__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card__link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.card__link:focus-visible {
+  outline: none;
+}
+
+.card:has(.card__link:focus-visible) {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.card__meta {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+/* Le bouton de sauvegarde reste cliquable au-dessus du lien étendu */
+.card__actions {
+  position: relative;
+  z-index: 1;
+  margin-top: 0.7rem;
+}

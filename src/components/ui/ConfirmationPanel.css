@@ -1,0 +1,10 @@
+.confirmation h1 {
+  margin-top: 0;
+}
+
+.confirmation__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}

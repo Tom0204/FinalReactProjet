@@ -1,0 +1,24 @@
+.form {
+  display: grid;
+  gap: 1rem;
+  max-width: 760px;
+  padding: 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.form__grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.form > .button {
+  justify-self: start;
+}
+
+@media (min-width: 700px) {
+  .form__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

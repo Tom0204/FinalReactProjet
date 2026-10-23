@@ -1,0 +1,51 @@
+.button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  color: var(--color-on-primary);
+  background: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+/* Les liens (LinkButton) ont le même aspect que les boutons */
+a.button {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.button:hover:not(:disabled) {
+  background: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button--small {
+  padding: 0.35rem 0.8rem;
+  font-size: 0.85rem;
+}
+
+.button--secondary {
+  color: var(--color-primary);
+  background: transparent;
+}
+
+.button--secondary:hover:not(:disabled) {
+  color: var(--color-on-primary);
+}
+
+.button--danger {
+  color: var(--color-on-primary);
+  background: var(--color-error);
+  border-color: var(--color-error);
+}
+
+.button--danger:hover:not(:disabled) {
+  background: var(--color-error);
+  border-color: var(--color-error);
+  filter: brightness(0.9);
+}

@@ -1,0 +1,52 @@
+/* Styles de base : réinitialisation, focus, mise en page et textes partagés. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Focus visible pour la navigation au clavier */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.container:focus {
+  outline: none;
+}
+
+.muted {
+  color: var(--color-muted);
+}
+
+/* Textes partagés par les cartes et la fiche de détail */
+.service-type {
+  margin: 0 0 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-primary);
+}
+
+.service-price {
+  margin: 0.3rem 0;
+  font-weight: 700;
+  color: var(--color-primary);
+}

@@ -1,0 +1,35 @@
+.detail {
+  display: grid;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.detail__image {
+  width: 100%;
+  max-width: 240px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: var(--color-placeholder);
+  border-radius: var(--radius);
+}
+
+.detail__content h1 {
+  margin: 0 0 0.5rem;
+}
+
+.detail__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 700px) {
+  .detail {
+    grid-template-columns: 240px 1fr;
+  }
+}

@@ -1,0 +1,40 @@
+/* Variables de thème : seules ces valeurs changent entre clair et sombre. */
+:root {
+  --color-bg: #f6f7fb;
+  --color-surface: #ffffff;
+  --color-text: #1f2430;
+  --color-muted: #5b6475;
+  --color-primary: #3f51b5;
+  --color-primary-dark: #2c3a8c;
+  --color-border: #d9dde8;
+  --color-error: #b3261e;
+  --color-on-primary: #ffffff;
+  --color-header-bg: #3f51b5;
+  --color-placeholder: #eceef5;
+  --color-focus: #ff9800;
+  --radius: 10px;
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --color-bg: #121521;
+  --color-surface: #1c2030;
+  --color-text: #e8eaf2;
+  --color-muted: #a9b1c6;
+  --color-primary: #8c9eff;
+  --color-primary-dark: #aab6ff;
+  --color-border: #3a4160;
+  --color-error: #ff8a80;
+  --color-on-primary: #10142a;
+  --color-header-bg: #1c2030;
+  --color-placeholder: #2a3048;
+  color-scheme: dark;
+}
